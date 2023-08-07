@@ -1,0 +1,136 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFA07A;
+}
+
+.header,
+.footer {
+    background-color: #008080;
+    padding: 2rem 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 1rem;
+}
+
+.navbar a:hover {
+    color: blue;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 22%;
+    margin-left: 2rem;
+}
+
+@media only screen and (max-width:480px) {
+    .navbar {
+        width: 100%;
+        font-size: 1rem;
+        justify-content: space-evenly;
+    }
+    .navbar a {
+        padding: 0;
+    }
+    .navbar a:active {
+        color: blue;
+    }
+}
+
+/* Intro */
+.intro {
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h1 {
+    color: #FF7F50;
+    background-color: rgba(0, 0, 0, .5);;
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+/* Invitation */
+.invitation {
+    margin-bottom: 5rem;
+}
+
+.invitation .content {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+}
+
+.invitation .content h2 {
+    color: #FFFC04;
+    padding-bottom: 1rem;
+}
+
+.invitation p {
+    color: #fff;
+    line-height: 2;
+}
+
+.image-flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-flex-container img {
+    width: 34.375rem;
+    opacity: .9;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #008080;
+    color: #FFFC04;
+    height: 20rem;
+    padding-left: 1rem;
+    margin-bottom: 5rem;
+}
+
+.testimonials h1 {
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+    max-width: 95%;
+}
+
+.testimonials p {
+    margin-top: 1rem;
+}
+
+/* Photos */
+.photos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+.photos img {
+    width: 34.375rem;
+}
+
+/* Meetup */
+.meetup h1 {
+    color: #FFFC04;
+    padding: 1rem;
+    text-align: center;
+}
+
+.meetup img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
