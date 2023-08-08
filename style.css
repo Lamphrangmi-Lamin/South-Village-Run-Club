@@ -2,6 +2,7 @@
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -32,7 +33,16 @@ body {
     margin-left: 2rem;
 }
 
+@media only screen and (min-width: 600px) {
+    .separator {
+        display: none;
+    }
+}
+
 @media only screen and (max-width:480px) {
+    .header, .footer {
+        padding-right: 4rem;
+    }
     .navbar {
         width: 100%;
         font-size: 1rem;
@@ -60,6 +70,14 @@ body {
     text-align: center;
     width: 100%;
     padding: 2rem 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .intro {
+        width: 100%;
+        font-size: 1rem;
+        overflow: hidden;
+    }
 }
 
 /* Invitation */
@@ -92,6 +110,26 @@ body {
     opacity: .9;
 }
 
+@media only screen and (max-width: 480px) {
+    .invitation .content{
+        max-width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .invitation p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    .image-flex-container {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .image-flex-container img {
+        max-width: 100%;
+        border: 3px solid #fff;
+    }
+}
+
 /* Testimonials */
 .testimonials {
     background-color: #008080;
@@ -111,6 +149,12 @@ body {
     margin-top: 1rem;
 }
 
+@media only screen and (max-width: 480px) {
+    .testimonials h1 {
+        font-size: 1.8rem;
+    }
+}
+
 /* Photos */
 .photos {
     display: flex;
@@ -120,6 +164,16 @@ body {
 
 .photos img {
     width: 34.375rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .photos {
+        flex-direction: column;
+    }
+    .photos img {
+        max-width: 100%;
+        border: 3px solid #fff;
+    }
 }
 
 /* Meetup */
@@ -133,4 +187,13 @@ body {
     display: block;
     width: 50%;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .meetup h1 {
+        font-size: 1.8rem;
+    }
+    .meetup img {
+        border: 3px solid #fff;
+    }
 }
