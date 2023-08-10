@@ -39,6 +39,12 @@ body {
     }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .navbar {
+        width: 45%;
+    }
+}
+
 @media only screen and (max-width:480px) {
     .header, .footer {
         padding-right: 4rem;
@@ -108,6 +114,7 @@ body {
 .image-flex-container img {
     width: 34.375rem;
     opacity: .9;
+    border: 3px solid #fff;
 }
 
 @media only screen and (max-width: 480px) {
@@ -127,6 +134,21 @@ body {
     .image-flex-container img {
         max-width: 100%;
         border: 3px solid #fff;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .invitation .content {
+        width: 95%;
+        margin-left: auto;
+    }
+    .image-flex-container {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .image-flex-container img {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -155,6 +177,14 @@ body {
     }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .testimonials p, .testimonials h1 {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 /* Photos */
 .photos {
     display: flex;
@@ -164,15 +194,12 @@ body {
 
 .photos img {
     width: 34.375rem;
+    border: 3px solid #fff;
 }
 
 @media only screen and (max-width: 480px) {
     .photos {
         flex-direction: column;
-    }
-    .photos img {
-        max-width: 100%;
-        border: 3px solid #fff;
     }
 }
 
@@ -193,7 +220,14 @@ body {
     .meetup h1 {
         font-size: 1.8rem;
     }
-    .meetup img {
-        border: 3px solid #fff;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .photos {
+        flex-direction: column;
+    }
+    .photos img {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
