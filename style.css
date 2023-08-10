@@ -201,6 +201,8 @@ body {
     .photos {
         flex-direction: column;
     }
+    .photos img {
+        max-width: 100%;
 }
 
 /* Meetup */
